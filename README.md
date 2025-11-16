@@ -27,44 +27,32 @@ A **two-stage router** assigns segments of the query to the most suitable model 
 
 This architecture reduces compute cost, increases specialization, and achieves performance close to a 3B generalist model on difficult PhD-level tasks.
 
----
 ## Required Model Weights
 
-Download these three experts:
+Download these experts:
 
-- Qwen2.5-Math-1.5B-Instruct  
-- Qwen2.5-0.5B-Instruct  
+- Qwen2.5-Math-1.5B-Instruct
+- Qwen2.5-0.5B-Instruct
 - Qwen2.5-Coder-0.5B-Instruct
 
-Place each model in its own folder **directly inside the project directory**, like this:
+Place each model folder directly inside the project directory.
 
-```
-YourProjectFolder/
-├── Math/
-│   └── Qwen2.5-Math-1.5B-Instruct
-├── Qwen2.5-0.5B-Instruct/
-│   └── (model files here)
-├── Qwen2.5-Coder-0.5B-Instruct/
-│   └── (model files here)
+---
+
+## Minimal Runtime Directory (ONLY needed to RUN)
+
 ```
 YourProjectFolder/
 ├── splitter.py
 ├── router_v2.py
 ├── Use.ipynb
-├── pipeline.png
-├── Lospicking.png
-├── Report.pdf
-├── Report.tex
-├── Results.pdf
-├── LICENSE
-├── NOTICE
-├── README.md
 ├── Math/
-│   └── Qwen2.5-Math-1.5B-Instruct (model files)
+│   └── Qwen2.5-Math-1.5B-Instruct       (model files)
 ├── Qwen2.5-0.5B-Instruct/
 │   └── (model files)
 └── Qwen2.5-Coder-0.5B-Instruct/
     └── (model files)
+```
 
+Only these files and these 3 expert folders are required to **execute the pipeline**.
 
-you do not need PNGs, Notes and all that for running them just take python and jupyter codes, all of them are necessary.
