@@ -55,3 +55,24 @@ YourProjectFolder/
 
 Only these files and these 3 expert folders are required to **execute the pipeline**.
 
+## Usage
+
+1. Make sure the three expert model folders are placed correctly in the project directory.
+
+2. Open the notebook:
+
+```
+Use.ipynb
+```
+
+3. Run all the cells in order.
+
+4. When prompted, type your full multi-stage question  
+   (for example: “Solve this problem, explain it, and write the code”).
+
+5. The system will automatically:
+   - split the query into **solve → explain → code**,  
+   - route each part to the best expert,  
+   - and generate the final combined output.
+
+If your directory structure is correct and the models are in place, the entire pipeline will execute automatically without additional setup.
