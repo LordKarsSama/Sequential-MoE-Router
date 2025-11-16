@@ -2,7 +2,6 @@
 
 ### **Author**
 - **M. G. Shree Harsha** (24BDS037)  
-- Solo Project Submission – AI 3rd Semester  
 - IIIT Dharwad  
 
 ---
