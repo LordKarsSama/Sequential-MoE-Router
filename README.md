@@ -1,4 +1,4 @@
-# Sequential Specialist MoE Routing Architecture for Complex Multi-Stage Queries
+# Sequential Specialist MoE Routing Architecture for Complex Queries
 
 ### **Author**
 - **M. G. Shree Harsha** (24BDS037)  
