@@ -28,27 +28,43 @@ A **two-stage router** assigns segments of the query to the most suitable model 
 This architecture reduces compute cost, increases specialization, and achieves performance close to a 3B generalist model on difficult PhD-level tasks.
 
 ---
+## Required Model Weights
 
-## 📁 Repository Structure
+Download these three experts:
+
+- Qwen2.5-Math-1.5B-Instruct  
+- Qwen2.5-0.5B-Instruct  
+- Qwen2.5-Coder-0.5B-Instruct
+
+Place each model in its own folder **directly inside the project directory**, like this:
 
 ```
-.
-├── splitter.py                 # Query segmentation logic (solve/explain/code)
-├── router_v2.py                # Two-stage loss-based routing architecture
-├── pipeline.png                # Architecture diagram
-├── Lospicking.png              # Visualization of loss-based expert selection
-├── Use.ipynb                   # Running the router end-to-end
-├── Validationcontents/
-│   ├── Validation3B.ipynb
-│   ├── ValidationMoE.ipynb
-│   ├── ValidationHard.jsonl
-│   ├── validationHard.MoE_results.md
-│   ├── validationHard.MoE_results.txt
-│   ├── ValidationHard_Qwen2_5_VL_3B.md
-│   └── ...
-├── Report.pdf                  # IEEE-format project report
-├── Results.pdf                 # Final graded comparison results
-├── LICENSE                     # Apache 2.0 License
-├── NOTICE                      # Model ownership + attribution statement
-└── README.md
+YourProjectFolder/
+├── Math/
+│   └── Qwen2.5-Math-1.5B-Instruct
+├── Qwen2.5-0.5B-Instruct/
+│   └── (model files here)
+├── Qwen2.5-Coder-0.5B-Instruct/
+│   └── (model files here)
 ```
+YourProjectFolder/
+├── splitter.py
+├── router_v2.py
+├── Use.ipynb
+├── pipeline.png
+├── Lospicking.png
+├── Report.pdf
+├── Report.tex
+├── Results.pdf
+├── LICENSE
+├── NOTICE
+├── README.md
+├── Math/
+│   └── Qwen2.5-Math-1.5B-Instruct (model files)
+├── Qwen2.5-0.5B-Instruct/
+│   └── (model files)
+└── Qwen2.5-Coder-0.5B-Instruct/
+    └── (model files)
+
+
+you do not need PNGs, Notes and all that for running them just take python and jupyter codes, all of them are necessary.
